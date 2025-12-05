@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #eeeeee;
+  --secondary: #0f0f0f;
+  --brandMoon: #fbbf24;
+  --dropdownh1: rgb(59, 60, 61);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.dark {
+  --primary: #0f0f0f;
+  --secondary: #eeeeee;
+  --brandMoon: #374151;
+  --dropdownh1: rgb(197, 193, 193); 
+}
+
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(17, 25, 40, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: var(--primary);
+    color: var(--secondary);
+  }
+}
+
+.custom-scrollbar {
+  overflow: scroll;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0px;
+}
