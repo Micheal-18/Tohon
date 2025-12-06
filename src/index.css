@@ -5,13 +5,16 @@
   --secondary: #0f0f0f;
   --brandMoon: #fbbf24;
   --dropdownh1: rgb(59, 60, 61);
+  --footer: #bbb8b8;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  Helvetica, Arial, sans-serif;
+
   background-color: var(--primary);
   color: var(--secondary);
 }
@@ -21,6 +24,7 @@ html, body {
   --secondary: #eeeeee;
   --brandMoon: #374151;
   --dropdownh1: rgb(197, 193, 193); 
+  --footer: #3a3a3a;
 }
 
 
