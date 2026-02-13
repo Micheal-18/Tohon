@@ -4,7 +4,7 @@ import { RiTwitterXFill } from 'react-icons/ri'
 
 const Footer = () => {
     return (
-        <footer className="relative w-full bg-(--footer) dark:bg-(--footer) text-(--secondary) dark:text-(--secondary) py-8 px-6">
+        <footer className="relative w-full border-t-2 border-gray-400 bg-(--footer) dark:bg-(--footer) text-(--secondary) dark:text-(--secondary) py-8 px-6">
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto py-10 pt-18">
 
@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
 
             {/* COPYRIGHT */}
-            <div className="mt-12 bottom-0 text-left text-sm">
+            <div className="mt-12 bottom-0 lg:text-left text-center text-sm">
                 &copy; 2024 Tohon. All rights reserved.
             </div>
 

@@ -136,7 +136,7 @@ const Home = () => {
       </div>
 
       <div className='w-full relative flex flex-col  '>
-        <div className='flex flex-col items-center justify-center bg-(--footer) dark:bg-(--footer) space-x-8 text-lg mt-10 py-20 px-4 lg:px-20 text-center gap-6'>
+        <div className='h-[70vh] flex flex-col items-center justify-center bg-(--footer) dark:bg-(--footer) space-y-6 text-lg mt-10 py-24 px-4 lg:px-20 text-center gap-6'>
           <h1 className='text-2xl text-(--secondary) dark:text-(--secondary) '>The Art of Fewer, Better Choices</h1>
 
           <p className='text-(--secondary) dark:text-(--secondary) max-w-2xl text-center'>

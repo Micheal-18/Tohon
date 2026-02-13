@@ -18,9 +18,9 @@ const Navbar = () => {
   const [collectionsOpen, setCollectionsOpen] = useState(false);
 
   return (
-    <div className="w-full fixed z-50  ">
+    <div className="fixed w-full z-50  ">
       {/* Top Banner */}
-      <Navlink />
+      <Navlink/>
 
       {/* MAIN NAV */}
       <div className="relative w-full shadow-sm">
@@ -56,9 +56,9 @@ const Navbar = () => {
             <div className="flex flex-col p-4 gap-4 font-bold">
 
               {/* SHOP */}
-              <div className="flex justify-between">
-                <a href="/" className="hover:underline">Shop</a>
-                <button onClick={() => setShopOpen(!shopOpen)}>
+              <div onClick={() => setShopOpen(!shopOpen)} className="flex justify-between">
+                <a  href="/" className="hover:underline">Shop</a>
+                <button >
                   {shopOpen ? <FaMinus /> : <FaPlus />}
                 </button>
               </div>
@@ -68,9 +68,9 @@ const Navbar = () => {
                 <div className="ml-4 mt-3 flex flex-col gap-4 text-gray-700 dark:text-gray-500 font-semibold">
 
                   {/* CATEGORIES */}
-                  <div className="flex justify-between">
+                  <div onClick={() => setCategoriesOpen(!categoriesOpen)} className="flex justify-between">
                     <span className="hover:underline cursor-pointer">Categories</span>
-                    <button onClick={() => setCategoriesOpen(!categoriesOpen)}>
+                    <button >
                       {categoriesOpen ? <FaMinus /> : <FaPlus />}
                     </button>
                   </div>
@@ -89,9 +89,9 @@ const Navbar = () => {
                   )}
 
                   {/* FEATURES */}
-                  <div className="flex justify-between">
+                  <div onClick={() => setFeaturesOpen(!featuresOpen)} className="flex justify-between">
                     <span className="hover:underline cursor-pointer">Featured</span>
-                    <button onClick={() => setFeaturesOpen(!featuresOpen)}>
+                    <button >
                       {featuresOpen ? <FaMinus /> : <FaPlus />}
                     </button>
                   </div>
@@ -226,7 +226,7 @@ const Navbar = () => {
               <RiShoppingBag2Line /> 0
             </button>
 
-            <button className="lg:flex hidden hover:underline">Sign In</button>
+            <a className="lg:flex hidden hover:underline" href="/register">Sign In</a>
           </div>
 
         </div>
