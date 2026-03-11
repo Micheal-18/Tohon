@@ -65,7 +65,7 @@ const Register = () => {
       localStorage.setItem("user", JSON.stringify({ email, password }));
       setSuccessMessage("Account Created Successfully");
 
-      setTimeout(() => navigate("/"), 1000);
+      setTimeout(() => navigate("/login"), 1000);
     }
   };
 
@@ -179,7 +179,7 @@ const Register = () => {
             {/* LOGIN LINK */}
             <p className="text-center text-sm text-gray-500">
               Already have an account?{" "}
-              <Link to="/pages/Login" className="underline font-medium">
+              <Link to="/login" className="underline font-medium">
                 Login
               </Link>
             </p>
