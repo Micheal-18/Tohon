@@ -5,6 +5,7 @@ import Layout from './layout/Layout.jsx';
 import Register from './page/Register.jsx';
 import Login from './page/Login.jsx';
 import Dashboard from './dashboard/dashboard.jsx';
+import MainDashboard from './dashboard/MainDashboard.jsx';
 
 const App = () => {
   const location = useLocation();
@@ -34,8 +35,8 @@ const App = () => {
       <Route path="/register" element={<Register />}   />
       <Route path="/login" element={<Login />}   />
 
-      <Route path='dashboard' element={<Dashboard />}>
-      
+      <Route path='/dashboard' element={<Dashboard />}>
+      <Route index element={<MainDashboard />} />
       </Route>
       
     </Routes>
